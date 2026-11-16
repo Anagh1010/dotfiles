@@ -23,7 +23,7 @@ setopt hist_find_no_dups
 alias c='clear'
 alias dotfiles-stow='(cd ~/dotfiles && find . -name ".DS_Store" -delete && stow --verbose --restow */)'
 alias cdp='cd ~/projects'
-alias ls='eza -lhF --icons=auto'
+alias ls='eza -lhF --icons=auto --group-directories-first'
 alias update='brew update && brew upgrade && brew cleanup --prune=all && brew missing && brew doctor; echo "----System deep cleaned and updated----"'
 alias gs='git status'
 alias gcm='git commit -m'
