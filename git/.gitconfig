@@ -1,8 +1,10 @@
 [user]
 	name = Anagh Bajpai
-  email = anaghb1010@proton.me
+    email = anaghb1010@proton.me
 [core]
 	editor = nvim
 	autocrlf = input
 [credential]
   helper = osxkeychain
+[init]
+	defaultBranch = main

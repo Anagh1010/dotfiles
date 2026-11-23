@@ -5,6 +5,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 activate_pyenv() { eval "$(pyenv init - zsh)"; }
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export JAVA_HOME="/opt/homebrew/opt/openjdk"
+export BAT_THEME="Catppuccin Mocha"
 
 # History
 HISTSIZE=1000; 
@@ -24,6 +25,7 @@ alias c='clear'
 alias dotfiles-stow='(cd ~/dotfiles && find . -name ".DS_Store" -delete && stow --verbose --restow */)'
 alias cdp='cd ~/projects'
 alias ls='eza -lhF --icons=auto --group-directories-first'
+alias cat='bat --paging=never'
 alias update='brew update && brew upgrade && brew cleanup --prune=all && brew missing && brew doctor; echo "----System deep cleaned and updated----"'
 alias gs='git status'
 alias gcm='git commit -m'
